@@ -1,0 +1,9 @@
+Hello! This is my test task and here is some description to it and some recomendations how to start it.
+
+1. For launch from IDE place TestTaskResources folder to C:\ and pre-instal chrom browser because of usage of chrom webdriver in one of tests
+2. This programm contains 3 scenarios:
+		a. TEST-1 (API): to check if image in link has standart Base64;
+		b. TEST-2 (DB): check that in some SQLite database("CountryName","Population","Area") countries have lower population than 50 ppl/sqKM and population in all countries in list is less than 2.000.000.000 people;
+		c. TEST-3 (iFrame): open link in some browser, replace one link on page with bing.com and search for some thing  in  opened frame on oage you've opened
+		
+Warning! TEST-3 (iFrame) will only open page in browser - to replace one link with another need to use JavaScript to modify DOM and because of leak of knolage about JavaScript usage in Java code this one will only open page in Chrome browser and wil try to click RUN button.
